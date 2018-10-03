@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Free Code Camp Survey form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles/survey_form.css">
+    </head>
+    <body>
+       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+       <div id="intro">
+        <h1 id="title"> Developer Survey Form</h1>
+        <p id="description">Help us in knowing more about you</p>
+        </div>
+        <div id="form-div">
+        <form id="survey-form">
+            <table>
+            <tr>
+            <td><label id="name-label" for="name">Name: </label></td>
+            <td><input type="text" id="name" placeholder="Enter your name" required /></td>
+            </tr>
+            
+            <tr>
+            <td><label id="email-label" for="email">Email: </label></td>
+            <td><input type="email" id="email" placeholder="Enter your email address" required/></td>
+            </tr>
+            <tr>
+            
+            <td><label id="number-label" for="number">Age: </label></td>
+            <td><input type="number" id="number" placeholder="Enter your age" min="12" max="60"/></td>
+        </tr>
+            <tr>
+            <td><label id="dropdown-label" for="dropdown">Which option best describes your current role? </label></td>
+            <td><select id="dropdown">
+                <option disabled value="value">Please select a value</option>
+                <option value="student">Student</option>
+                <option value="full-time">Full Time</option>
+                <option value="part-time">Part Time</option>
+                <option value="freelancer">Freelancer</option>
+            </select>
+        </td>
+        </tr>
+            <tr>
+                <td><label id="radio-label" for="radio">Why are you interested in this course</label></td>
+                <td>
+                  <input name="radio-buttons" value="1"  type="radio" id="program">
+                    <label for="program">Interested in Programming </label><br>
+                    
+                    <input name="radio-buttons" value="2"  type="radio" id="promote">
+                    <label for="promote">Want to get a promotion</label><br>
+                 
+                   <input name="radio-buttons" value="3"  type="radio" id="job">
+                   <label for="job">Looking for a Full Time job</label><br>
+                 
+            </td>
+            </tr>
+            <tr>
+                <td><label id="radio-label" for="radio">Which course do you want to learn</label></td>
+                <td>
+                        <input type="checkbox" name="course" value="1"><label>HTML</label><br>
+                        <input type="checkbox" name="course" value="2"><label>JavaScript</label><br>
+                        <input type="checkbox" name="course" value="3"><label>React</label><br>
+                        <input type="checkbox" name="course" value="4"><label>Angular</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Any more comments that you have </label></td>
+                <td><textarea id="comments" placeholder="Enter your comments here.." rows="10" cols="50"></textarea></td>
+            </tr>
+            </table>
+            <div>
+                <button type="submit"  class="btn btn-primary" id="submit">Submit</button>
+            </div>
+            </form>
+        </form>
+        </div>
+
+    </body>
+
+</html>

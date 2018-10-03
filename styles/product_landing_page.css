@@ -1,0 +1,254 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900";
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+    * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+    body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+    /* #header-img {
+    width: 55px;
+    margin: 0 15px;
+    } */
+    header {
+    color: #FF8A29;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+    .logo h1 {
+    font-family: Righteous;
+    font-size: 1.75em;
+    padding: 26px;
+}
+
+    header ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    width: 100%;
+}
+
+    #nav-bar {
+    display: flex;
+    height: 80px;
+}
+
+    li a:hover {
+    border-bottom: 4px solid #FF8A29;
+}
+
+    li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 26px;
+}
+
+    #links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+    .hero {
+    background-image: url("https://images.unsplash.com/photo-1493146165056-bb822d9422dd?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=af2e6f3a88ae424c944ff83dfe75790a&auto=format&fit=crop&w=1950&q=80");
+    background-position: bottom; 
+    height: 600px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .hero_text {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+    .hero_text h2 {
+    font-family: "Playfair Display";
+    font-size: 4em;
+}
+    .hero button {
+    width: 250px;
+    background-color: #FF8A29;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+    #features {
+    margin-top: 30px;
+}
+    .grid {
+    display: flex;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0; 
+}
+    .icon {
+    width: 20vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 24px;
+    color: darkorange;
+}
+    .icon i {
+    width: 70px;
+}
+    .desc {
+    width: 80vw;
+}
+    .desc h2 {
+    font-family: Quicksand;
+    font-size: 2em;
+    border-top: 4px solid #FF8A29;
+    padding-top: 14px;
+}
+
+    .desc p {
+    font-family: sans-serif;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    line-height: 1.6;
+}
+
+    #how-it-works {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+    iframe {
+    width: 100%;
+    max-width: 560px;
+}
+    .productscontainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+    .productheader img {
+    width: 25px;
+}
+    .product {
+    border: 2px solid #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.product h3 {
+    font-family: Quicksand;
+    font-size: 28px;
+}
+
+.product h4 {
+    font-family: Quicksand;
+    font-size: 20px;
+    margin: 6px;
+}
+
+.product ul {
+    font-family: sans-serif;
+}
+
+.product li {
+    padding: 6px;
+}
+.product button {
+    background-color: #FF8A29;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.contact {
+    width:  380px;
+    background-color: #FF8A29;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.contact h3 {
+    font-family: Quicksand;
+    font-size: 2em;
+}
+
+.contact p {
+    padding: 20px;
+}
+
+input[type=email] {
+    width: 80%;
+    padding: 8px 20px;
+}
+
+input[type=submit] {
+    padding: 15px 32px;
+    margin: 16px;
+    color: #333;
+    background-color: white;
+    border: none;
+    font-family: Quicksand;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #F5F5F5;
+}
+footer {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+}
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+footer li {
+    padding: 0 10px;
+}
+footer li a:hover {
+    border-bottom: none;
+}
+footer span {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}

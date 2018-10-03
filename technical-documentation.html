@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>
+            Python Technical Documentation
+        </title>
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/technical_documentation.css">
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <ul>
+               <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+               <a class="nav-link" href="#Prerequisites" rel="internal"><li>Prerequisites</li></a>
+               <a class="nav-link" href="#Hello_World" rel="internal"><li>Hello World</li></a>
+               <a class="nav-link" href="#Basic_Syntax" rel="internal"><li>Basic Syntax</li></a>
+               <a class="nav-link" href="#Variable_Types" rel="internal"><li>Variable Types</li></a>
+               <a class="nav-link" href="#Decision_Making" rel="internal"><li>Decision Making</li></a>
+               <a class="nav-link" href="#Loops" rel="internal"><li>Loops</li></a>
+               
+               <a class="nav-link" href="#Strings" rel="internal"><li>Strings</li></a>
+               <a class="nav-link" href="#Lists" rel="internal"><li>Lists</li></a>
+               <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. 
+                        Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+                    <p>It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL).</p>
+                    <p>It is used for</p>
+                    <ul>
+                        <li>web development (server-side)</li>
+                        <li>software development</li>
+                        <li>mathematics</li>
+                        <li>system scripting</li>
+                        </ul>
+                    </article>
+            </section>
+            <section class="main-section" id="Prerequisites">
+                    <header>Prerequisites</header>
+                    <article>
+                        <p>You should have a basic understanding of Computer Programming terminologies. 
+                            A basic understanding of any of the programming languages is a plus.</p>
+                        </article>
+            </section>
+            <section class="main-section" id="Hello_World">
+                    <header>Hello World</header>
+                    <article>
+                        <p>The most up-to-date and current source code, binaries, documentation, news, etc., is available on the official 
+                            website of <a href = "https://www.python.org/" target = "_blank">Python</a></p>
+                        <p>Once you have downloaded Python, open up IDLE that comes as part of the installation and type the below mentioned program</p>
+                        <code><span class="print">print</span>(<span class="string">"Hello, World!"</span>)
+                        </code>
+                        </article>
+            </section>
+            <section class="main-section" id="Basic_Syntax">
+                    <header>Basic Syntax</header>
+                    <article>
+                        <p>A Python identifier is a name used to identify a variable, function, class, module or other object. An identifier starts with a letter A to Z or a to z or an underscore (_) 
+                            followed by zero or more letters, underscores and digits (0 to 9).</p>
+                        <p>Python does not allow punctuation characters such as @, $, and % within identifiers. Python is a case sensitive programming language. 
+                            Thus, <strong>Manpower</strong> and <strong>manpower</strong> are two different identifiers in Python.</p>
+                            <p>Here are naming conventions for Python identifiers</p>
+                            <ul>
+                                <li>Class names start with an uppercase letter. All other identifiers start with a lowercase letter.</li>
+                                <li>Starting an identifier with a single leading underscore indicates that the identifier is private.</li>
+                                <li>Starting an identifier with two leading underscores indicates a strongly private identifier.</li>
+                                <li>If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.</li>
+                            </ul>
+                            <p>Python provides no braces to indicate blocks of code for class and function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced.</p>
+                            <p>The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. For example</p>
+                            <code> if True:
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="print">print</span>("True")
+                                 else:
+                                 &nbsp;&nbsp;&nbsp;&nbsp;<span class="print">print</span>("False")
+                            </code>
+                            <p>However, the following block generates an error</p>
+                        <code>if True:
+                            <span class="print">print</span>(<span class="string">"Answer"</span>)
+                            <span class="print">print</span>(<span class="string">"True"</span>)
+                            else:
+                            <span class="print">print</span>(<span class="string">"Answer"</span>)
+                            <span class="print">print</span>(<span class="string">"False"</span>)
+                        </code>
+                        <p>A hash sign (#) that is not inside a string literal begins a comment. All characters after the # and up to the end of the physical line 
+                            are part of the comment and the Python interpreter ignores them</p>
+                            <code><span class="comment"># First comment</span>
+                                <span class="print">print</span>(<span class="string">"Hello, Python!"</span>) <span class="comment"># second comment</span>
+                            </code>
+                        </article>
+                        
+            </section>
+            <section class="main-section" id="Variable_Types">
+                    <header>Variable Types</header>
+                    <article>
+                        <p>Variables are nothing but reserved memory locations to store values. 
+                            This means that when you create a variable you reserve some space in memory.</p>
+                        <p>Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. 
+                            Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables</p>
+                        <p>The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable</p>
+                        <code> counter = 100          <span class="comment"># An integer assignment</span>
+                                miles   = 1000.0       <span class="comment"># A floating point</span>
+                                name    = <span class="string">"John"</span>      <span class="comment"># A string</span>
+                                
+                                <span class="print">print</span>(counter)
+                                <span class="print">print</span>(miles)
+                                <span class="print">print</span>(name)
+                        </code>
+                        </article>
+            </section>
+            <section class="main-section" id="Decision_Making">
+                    <header>Decision Making</header>
+                    <article>
+                        <p>Decision making is anticipation of conditions occurring while execution of the program and specifying actions taken according to the conditions</p>
+                        <p>Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take 
+                            and which statements to execute if outcome is TRUE or FALSE otherwise.</p>
+                        <p>Here is an example of <strong>if</strong> statement</p>
+                        <code> var = 100
+                                if  var == 100: 
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="print">print</span>(<span class="string">"Value of expression is 100"</span>)
+                                <span class="print">print</span>(<span class="string">"Good bye!"</span>)
+                        </code>
+                        </article>
+            </section>
+            <section class="main-section" id="Loops">
+                    <header>Loops</header>
+                    <article>
+                        <p>A loop statement allows us to execute a statement or group of statements multiple times</p>
+                        
+                        <code>for x in range(6):
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="print">print</span>(x)  <span class="comment">#prints numbers from 0 to 5</span>     
+                        </code>
+                        </article>
+            </section>
+            <section class="main-section" id="Strings">
+                    <header>Strings</header>
+                    <article>
+                        <p>Strings are amongst the most popular types in Python. We can create them simply by enclosing characters in quotes. Python treats single quotes the same as double quotes. 
+                            Creating strings is as simple as assigning a value to a variable</p>
+                        <code>  var1 = <span class="string">'Hello World!'</span>
+                                var2 = <span class="string">"Python Programming"</span>
+                        </code>
+                        <p>To access substrings, use the square brackets for slicing along with the index or indices to obtain your substring</p>
+                        <code>var1 = <span class="string">'Hello World!'</span>
+                                var2 = <span class="string">"Python Programming"</span>
+                                
+                                <span class="print">print</span>(<span class="string">"var1[0]: "</span>, var1[0])
+                                <span class="print">print</span>(<span class="string">"var2[1:5]: "</span>, var2[1:5])
+                        </code>
+                        <p>When the above code is executed, it produces the following result</p>
+                        <code>var1[0]:  H
+                            var2[1:5]:  ytho
+                        </code>
+                        </article>
+            </section>
+            <section class="main-section" id="Lists">
+                    <header>Lists</header>
+                    <article>
+                        <p>The list is a most versatile datatype available in Python which can be written as a list of comma-separated values (items) between square brackets</p>
+                        <p>Creating a list is as simple as putting different comma-separated values between square brackets</p>
+                        
+                        <code>list1 = [<span class="string">'physics'</span>, <span class="string">'chemistry'</span>, 1997, 2000]
+                            list2 = [1, 2, 3, 4, 5 ]
+                            list3 = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>, <span class="string">"d"</span>]  
+                        </code>
+                        <p>Similar to string indices, list indices start at 0, and lists can be sliced, concatenated and so on.</p>
+                        </article>
+            </section>
+            <section class="main-section" id="Reference">
+                    <header>Reference</header>
+                    <article>
+                        <p>All the documentation is taken from official <a href="https://docs.python.org/3/" target="_blank">Python</a> documentation</p>
+                        </article>
+            </section>
+        </main>
+    </body>
+</html>

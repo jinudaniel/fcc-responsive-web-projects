@@ -1,0 +1,106 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+body {
+    display: flex;
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    margin: 30px;
+}
+#navbar {
+    position: fixed;
+    width: 25%;
+    margin: 1em;
+    font-size: 1.25em;
+}
+nav header {
+    color:#ff6347;
+    font-size: 1.5em;
+    margin:10px;
+    text-align:left;
+}
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-inline-start: 0px;
+    
+}
+#navbar a {
+    text-decoration: none;
+    color: #5D5C61;
+    opacity: .5;
+}
+#navbar a:hover {
+    opacity: 1;
+}
+#navbar li {
+    margin-left:10px;
+    list-style: none;
+    padding-top: 15px;
+    text-align: left;
+}
+#main-doc{
+    position: absolute;
+    margin-left:350px;
+    padding:50px;
+    margin-bottom:110px;
+}
+#main-doc header {
+    color:#ff6347;
+    font-size: 1.5em;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+code {
+    background:rgb(248, 248, 248);
+    color: rgb(51, 51, 51);
+    padding: 10px;
+    margin:10px;
+    border-radius:5px;
+    display: block;
+    white-space: pre-line;
+    position: relative;
+    text-align: left;
+    word-break: normal;
+    word-wrap: normal;
+  max-width: 750px;
+}
+.comment {
+    color:rgb(153, 153, 136);
+    font-style: italic;
+}
+.print {
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+.string {
+    color: rgb(221, 17, 68);
+}
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+#navbar ul{
+    justify-content: center;
+    align-items: center;
+}
+#navbar{
+    background-color: #ffffff;
+    position:absolute;
+    top:0;
+    padding:0;
+    margin: 0;
+    width:100%;
+    /* max-height:275px; */
+    height: 200px;
+    border:none;
+    z-index:1;
+    overflow-y: scroll;
+    /* overflow-x:hidden;  */
+}
+nav header {
+    text-align: center;
+}
+#main-doc{
+    position: relative;
+    margin-left:0px;
+    margin-top: 300px;
+}
+}

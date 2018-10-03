@@ -1,0 +1,22 @@
+#image{
+    max-width:100%;
+    display: block;
+    margin:auto;
+}
+#img-caption{
+    margin-top: 10px;
+}
+#tribute-info {
+    text-align : left;
+    background-color: #e9ecef;
+    margin: 20px;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+ul {
+    list-style-position: inside
+}
+li {
+    text-align : left;
+}

@@ -1,0 +1,41 @@
+body {     
+    background-color: indianred;
+    padding: 30px;
+  }
+  #intro {
+    text-align: center;
+  }
+  #form-div {
+    background-color: paleturquoise;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+   }
+   textarea {
+     padding:2px;
+     height: 100px;
+     resize: vertical;
+     width: 400px;
+    }
+    table {
+      table-layout: fixed;
+      width: 100%;
+    }
+    td {
+      width: 100%;
+      vertical-align: top;
+      padding:5px;
+    }
+  td:first-child {
+    text-align:right;
+  }
+  
+  #name, #email, #number {
+    width: 300px;
+    padding: 2px;
+  }
+  #submit {
+    display: block;
+    margin: auto;
+  }
